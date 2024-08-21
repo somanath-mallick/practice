@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Webpage</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <h2>Login</h2>
+            <form action="#">
+                <input class="standard-input" name="email" id="email" type="text" placeholder="email" required> 
+                <input class="standard-input" name="password" id="password" type="text" placeholder="password" required> 
+                <div class="options">
+                    <input type="checkbox">
+                    <label for="remember">Remember me!</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" onsubmit="return false;" onclick="login()">Submit</button>
+                <p>Don't have an account?<br><a href="#">Register</a></p>
+                <!-- <script src="{{ url_for('static', filename='js.js') }}"></script> -->
+                <script src="../static/js.js"></script>
+
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
